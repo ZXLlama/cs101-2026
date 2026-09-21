@@ -4,7 +4,7 @@
     {
       "label": "C: 建置目前檔案",
       "type": "shell",
-      "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}\\build' | Out-Null; & 'C:\\msys64\\ucrt64\\bin\\gcc.exe' -std=c17 -Wall -Wextra -pedantic -g '${file}' -o '${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe'",
+      "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}/build' | Out-Null; & 'C:/msys64/ucrt64/bin/gcc.exe' -std=c17 -Wall -Wextra -pedantic -g '${workspaceFolder}/${relativeFile}' -o '${workspaceFolder}/build/program.exe'",
       "options": {
         "cwd": "${workspaceFolder}",
         "shell": {
@@ -22,7 +22,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "使用 GCC（C17）建置目前開啟的 C 檔案"
+      "detail": "使用 GCC（C17）建置目前開啟的 C 檔案；輸出為 build/program.exe"
     }
   ]
 }
