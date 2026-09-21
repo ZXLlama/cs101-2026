@@ -21,7 +21,12 @@ cmake_install.cmake
 Makefile
 
 # IDE / editor
-.vscode/
+# Keep shared VS Code settings for this course repository.
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .idea/
 
 # OS
