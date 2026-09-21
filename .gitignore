@@ -1,34 +1,5 @@
-# C build outputs
-*.o
-*.obj
-*.out
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Debug / build folders
-build/
-bin/
-obj/
-Debug/
-Release/
-
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-
-# IDE / editor
-# Keep shared VS Code settings for this course repository.
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
+# This course repository only tracks C source files and this .gitignore.
+*
+!*/
+!*.c
+!.gitignore
