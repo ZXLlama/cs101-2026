@@ -13,7 +13,7 @@ void print_num(int n) {
     printf("\n");
 }
 
-int main(void) {
+int main() {
     int rows = 6;
 
     for (int i = 1; i <= rows; i++) {
